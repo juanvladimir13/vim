@@ -9,21 +9,26 @@ https://raw.githubusercontent.com/junegunn/vim-plug/master/plug.vim
 
 ## Archivo de configuracion basica
 
-Verificar que el archivo exista en el directorio del usuario
-
-```bash
-ls .vimrc
-```
-
-Si no existe el archivo, crear el archivo manualmente
+Eliminar el archivo del directorio del usuario
 
 ```bash
 cd
+rm -v .vimrc
+```
+
+Crear el archivo de configuracion
+
+```bash
 touch .vimrc
 ```
 
-Agregar el contenido al archivo `.vimrc`
+Editar el archivo `.vimrc`
 
+```bash
+vim .vimrc
+```
+
+Agregar el contenido
 
 ```vim
 syntax on
@@ -55,4 +60,4 @@ let g:jsx_ext_required = 0
 au BufRead,BufNewFile *.astro set filetype=jsx
 ```
 
-Ingresar a vim y ejecutar el comando `:PlugInstall`
+Ejecutar el comando `:PlugInstall`
